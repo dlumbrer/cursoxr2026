@@ -1,19 +1,44 @@
 <html>
 
 <head>
-  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
 </head>
 
 <body>
-  <a-scene xr-mode-ui="XRMode: xr">
-   
-    <a-box position="2 2 -5" height="3" color="red">
-        <a-cone position="0 2 0" color="darkgreen" height="1"></a-cone>
+    <a-scene xr-mode-ui="XRMode: xr">
 
-    </a-box>
+        <a-box position="2 2 -5" height="3" color="red">
+            <a-cone position="0 2 0" color="darkgreen" height="1"></a-cone>
+        </a-box>
 
-  </a-scene>
+        <!-- Fondo oscuro -->
+        <a-sky color="black"></a-sky>
+
+        <a-sphere id="sol" position="0 0 0" radius="1" color="yellow">
+
+            <!-- Planetas hijos del Sol -->
+            <a-sphere id="mercurio" position="2 0 0" radius="0.2" color="gray">
+            </a-sphere>
+
+            <a-sphere id="venus" position="3 0 0" radius="0.3" color="orange">
+            </a-sphere>
+
+            <a-sphere id="tierra" position="4 0 0" radius="0.35" color="blue">
+            </a-sphere>
+
+            <a-sphere id="marte" position="5 0 0" radius="0.3" color="red">
+            </a-sphere>
+
+            <a-sphere id="jupiter" position="6.5 0 0" radius="0.7" color="brown">
+            </a-sphere>
+
+            <a-sphere id="saturno" position="8 0 0" radius="0.6" color="gold">
+            </a-sphere>
+
+        </a-sphere>
+
+    </a-scene>
 </body>
 
 </html>
